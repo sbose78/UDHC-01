@@ -1,0 +1,5 @@
+C:\Users\BOSE\documents\visual studio 2010\Projects\Healthcare\Healthcare\bin\Healthcare.dll
+C:\Users\BOSE\documents\visual studio 2010\Projects\Healthcare\Healthcare\bin\Healthcare.pdb
+C:\Users\BOSE\documents\visual studio 2010\Projects\Healthcare\Healthcare\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\BOSE\documents\visual studio 2010\Projects\Healthcare\Healthcare\obj\Debug\Healthcare.dll
+C:\Users\BOSE\documents\visual studio 2010\Projects\Healthcare\Healthcare\obj\Debug\Healthcare.pdb
