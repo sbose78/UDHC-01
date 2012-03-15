@@ -22,7 +22,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <p align="center"">
 
-        &nbsp;<span class="style3">Table of health records</span><table style="width:58%;" align='center'>
+        &nbsp;<span class="style3">Table of health records</span><table 
+            style="width:58%; font-size: medium;" align='center'>
 
         <%
             DataTable dt = getData();
@@ -35,7 +36,7 @@
              %>
             <tr>
 
-            <td class="style1"> 
+            <td class="style1" bgcolor="#FFFFCC" valign="top"> 
             
             
 
@@ -44,7 +45,7 @@
              
             
             </td>
-            <td class="style2">  <%= dt.Rows[i]["mainHealthIssue"].ToString()%> </td>
+            <td class="style2" bgcolor="#FFFFCC" valign="top">  <%= dt.Rows[i]["mainHealthIssue"].ToString()%> </td>
 
             </tr>
             <%
