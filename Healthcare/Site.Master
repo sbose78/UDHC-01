@@ -33,6 +33,13 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                        <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Care-seekers portal" 
+                            Value="Care-seekers portal"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/docInterface/showProblemsTable.aspx" 
+                            Text="Table of Health Records" Value="Table of Health Records">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/docInterface/showProblem.aspx" 
+                            Text="Image Narratives" Value="Image Narratives"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
