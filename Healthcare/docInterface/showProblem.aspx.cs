@@ -42,7 +42,7 @@ namespace Healthcare.docInterface
         }
 
         public void populate(String solution_id)
-        {
+        {/*
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = MySQLDatabase.getConnectionString();
             DataTable dt = new DataTable();
@@ -57,7 +57,7 @@ namespace Healthcare.docInterface
                 DropDownList2.Items.Add(dt.Rows[i]["solution_id"].ToString()+","+dt.Rows[i]["medic_id"].ToString());
 
             }
-            con.Close();
+            con.Close();**/
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
