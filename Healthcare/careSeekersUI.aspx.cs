@@ -38,7 +38,7 @@ namespace Healthcare
 
                 conn.Open();
 
-                String commandText = "insert into student(name,roll,pic) value( ?name , ?roll , ?pic) ;";
+                String commandText = "insert into test_table(name,roll,pic) value( ?name , ?roll , ?pic) ;";
                 MySqlCommand comm = new MySqlCommand(commandText, conn);
                 comm.Parameters.Add("?name", MySqlDbType.LongText).Value = "# ACACIA NILOTICA (L.) Willd. ex Del. ssp. INDICA (Benth.) Brenan.";
                 comm.Parameters.Add("?roll", MySqlDbType.LongText).Value = "yay";
