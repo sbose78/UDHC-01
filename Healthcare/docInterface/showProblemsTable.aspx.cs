@@ -19,8 +19,7 @@ namespace Healthcare.docInterface
 
         public DataTable getData()
         {
-
-            
+                     
 
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = MySQLDatabase.getConnectionString();
@@ -30,6 +29,22 @@ namespace Healthcare.docInterface
                 con.Close();
                 return dt;    
 
+        }
+
+        public String getProperString(String nameauto1)
+        {
+            int j;
+            for (j = 0; j < nameauto1.Length; j++)
+            {
+                if (nameauto1[j] != '#' && nameauto1[j] != ' ')
+                {
+                    break;
+                }
+
+            }
+
+            nameauto1 = nameauto1.Substring(j);
+            return nameauto1;
         }
 
     }

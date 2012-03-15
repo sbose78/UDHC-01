@@ -29,12 +29,17 @@
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
+
+                String name = dt.Rows[i]["nameauto"].ToString();
+                name = getProperString(name);
              %>
             <tr>
 
             <td class="style1"> 
             
-            <a href="imgdata.aspx?nameauto=<%=dt.Rows[i]["nameauto"].ToString() %>"><%= dt.Rows[i]["nameauto"].ToString() %> </a>
+            
+
+            <a href="problemDetails.aspx?nameauto=<%=name%>"><%= dt.Rows[i]["nameauto"].ToString() %> </a>
             
              
             

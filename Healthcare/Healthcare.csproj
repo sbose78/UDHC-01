@@ -70,7 +70,7 @@
     <Content Include="docInterface\imgdata.aspx" />
     <Content Include="docInterface\showProblem.aspx" />
     <Content Include="docInterface\showProblemsTable.aspx" />
-    <Content Include="docInterface\WebForm4.aspx" />
+    <Content Include="docInterface\problemDetails.aspx" />
     <Content Include="patient_naming\scientificNamesForm.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -131,12 +131,12 @@
     <Compile Include="docInterface\showProblemsTable.aspx.designer.cs">
       <DependentUpon>showProblemsTable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="docInterface\WebForm4.aspx.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="docInterface\problemDetails.aspx.cs">
+      <DependentUpon>problemDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="docInterface\WebForm4.aspx.designer.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="docInterface\problemDetails.aspx.designer.cs">
+      <DependentUpon>problemDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="patient_naming\PatientNaming.cs" />
     <Compile Include="dbcon\MySQLDatabase.cs" />

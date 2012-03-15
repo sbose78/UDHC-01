@@ -93,9 +93,9 @@ namespace Healthcare
 
             PatientNaming pn=new PatientNaming();
 
-            /*
+            
             nameauto1 = pn.getUniqueName();
-
+            
             //find out the first letter
             int j;
             for ( j = 0; j < nameauto1.Length; j++)
@@ -107,7 +107,7 @@ namespace Healthcare
 
             }
 
-            nameauto1=nameauto1.Substring(j);*/
+            nameauto1=nameauto1.Substring(j);
             
             byte[] imgByte;
 
