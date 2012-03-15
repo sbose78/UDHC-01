@@ -70,8 +70,8 @@ namespace Healthcare.docInterface
 
             Label1.Text = vals[0];
 
-            Image1.ImageUrl = "http://boseapp3.apphb.com/docInterface/imgdata.aspx?nameauto=" + vals[0];
-            //return "/docInterface/imgdata.aspx?nameauto=" + vals[0];
+            Image1.ImageUrl = "docInterface/imgdata.aspx?nameauto=" + vals[0];
+            //return "docInterface/imgdata.aspx?nameauto=" + vals[0];
             Panel1.Visible = true;
             populate(Label1.Text);
 
@@ -83,7 +83,8 @@ namespace Healthcare.docInterface
 
         //submit solutions
         protected void Button1_Click(object sender, EventArgs e)
-        {
+        {/*
+
             MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString;
 
@@ -105,6 +106,7 @@ namespace Healthcare.docInterface
                 conn.Close();
 
                 populate(Label1.Text);
+          * 
 
               //  Label1.Text = "Nayan!!!";
             }
@@ -116,12 +118,12 @@ namespace Healthcare.docInterface
             {
 
                 
-            }
+            }**/
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            MySql.Data.MySqlClient.MySqlConnection conn;
+            /*MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString;
 
             myConnectionString = MySQLDatabase.getConnectionString();// "server=localhost;uid=root;pwd=qwerty;database=test";
@@ -154,7 +156,7 @@ namespace Healthcare.docInterface
             {
 
 
-            }
+            }*/
             
 
         }
@@ -165,7 +167,7 @@ namespace Healthcare.docInterface
         }
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {/*
             String solution_id=DropDownList2.SelectedValue;
             char[] separators = new char[1];
             separators[0] = ',';
@@ -180,6 +182,7 @@ namespace Healthcare.docInterface
             displaySolution.Text = dt.Rows[0]["solution_data"].ToString();            
 
             con.Close();
+          * */
         }
 
         
