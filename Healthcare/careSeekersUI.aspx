@@ -36,7 +36,7 @@
         <br />
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
             style="margin-left: 0px" Text="Upload image ONLY ( less than 500KB )" 
-            Width="263px" />
+            Width="263px" Visible="False" />
     </asp:Panel>
     <asp:Panel ID="FormQuestionsPanel" runat="server" Height="1560px" 
         style="text-align: center">
