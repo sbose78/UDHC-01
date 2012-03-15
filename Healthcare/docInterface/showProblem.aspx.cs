@@ -70,10 +70,12 @@ namespace Healthcare.docInterface
 
             Label1.Text = vals[0];
 
-            Image1.ImageUrl = "docInterface/imgdata.aspx?nameauto=" + vals[0];
+            Image1.ImageUrl = "http://boseapp3.apphb.com/docInterface/imgdata.aspx?nameauto=" + vals[0];
             //return "/docInterface/imgdata.aspx?nameauto=" + vals[0];
             Panel1.Visible = true;
             populate(Label1.Text);
+
+            //http://boseapp3.apphb.com/docInterface/imgdata.aspx?nameauto=Shoubhik
 
 
 
