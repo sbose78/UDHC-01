@@ -16,7 +16,7 @@ namespace Healthcare.dbcon
 
         public static String getConnectionString()
         {
-            String connString = "server=8649385a-f53d-4037-b7c0-a0010132e5a6.mysql.sequelizer.com;database=db8649385af53d4037b7c0a0010132e5a6;uid=ndsrytgmhcyyeiwp;pwd=cP3Ee2tbvK5EJxCzp5qEuCKmQuxZXWScwzye2JWNWRswXR43KEQocwqGdPWRBBmG";
+            String connString = "server=instance7904.db.xeround.com;port=5950;uid=sbose78_db1;pwd=qwerty;database=health1";
                 
                 //"server=8649385a-f53d-4037-b7c0-a0010132e5a6.mysql.sequelizer.com;database=db8649385af53d4037b7c0a0010132e5a6;uid=ndsrytgmhcyyeiwp;pwd=cP3Ee2tbvK5EJxCzp5qEuCKmQuxZXWScwzye2JWNWRswXR43KEQocwqGdPWRBBmG";
                 

@@ -31,7 +31,8 @@
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
-            style="margin-left: 0px" Text="Upload image ( less than 2 MB )" Width="263px" />
+            style="margin-left: 0px" Text="Upload image ONLY ( less than 500KB )" 
+            Width="263px" />
         <br />
         <br />
     </asp:Panel>

@@ -92,6 +92,8 @@ namespace Healthcare
             Boolean isImgPresent = FileUpload1.HasFile;
 
             PatientNaming pn=new PatientNaming();
+
+            /*
             nameauto1 = pn.getUniqueName();
 
             //find out the first letter
@@ -105,7 +107,7 @@ namespace Healthcare
 
             }
 
-            nameauto1=nameauto1.Substring(j);
+            nameauto1=nameauto1.Substring(j);*/
             
             byte[] imgByte;
 
