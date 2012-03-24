@@ -27,7 +27,7 @@
         .style2
         {
             text-align: center;
-            width: 84px;
+            width: 270px;
         }
         .style3
         {
@@ -61,7 +61,18 @@
 
 &nbsp;<div id="table_list">
         <table 
-            style="width:87%; font-size: medium;" align='center'>
+            style="width:78%; font-size: medium;" align='center'>
+
+            <thead>
+            
+             <tr>
+
+
+             <td>ISSUE-ID</td><td>CARE-SEEKER NAME</td><td>MAIN PROBLEM</td><td>DISCUSSION</td>
+            
+            </tr>
+
+            </thead>
 
         <%
             DataTable dt = getData();
