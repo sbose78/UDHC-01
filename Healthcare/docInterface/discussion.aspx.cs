@@ -49,6 +49,8 @@ namespace Healthcare.docInterface
             MySqlDataAdapter adpt = new MySqlDataAdapter("select * from suggestion where problem_id = " + Request.Params["problem_id"]+" ORDER BY suggestion_id ASC", con);
             adpt.Fill(dt);
             con.Close();
+
+                      
             return dt;
         }
 

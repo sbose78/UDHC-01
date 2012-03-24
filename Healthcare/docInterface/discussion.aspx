@@ -13,62 +13,35 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         <br />
-        <span class="style1">Network processing : Care-givers for patient: </span>
-    </p>
+        <span class="style1">Network processing : Care-givers for patient: </span>&nbsp;</p>
     <p>
         PROBLEM ID :&nbsp;
         <asp:TextBox ID="TextBox2ProblemId" runat="server" Height="22px" Width="322px"></asp:TextBox>
 &nbsp; PATIENT NAME:
+
+
+
         <asp:TextBox ID="TextBox3PatientName" runat="server" Height="19px" 
             Width="310px"></asp:TextBox>
-    </p>
-    <p>
-        <asp:TextBox ID="TextBox1Suggestion" runat="server" Height="209px" 
+            </p>
+    
+        <asp:TextBox ID="TextBox1Suggestion" runat="server" Height="72px" 
             Width="830px" TextMode="MultiLine"></asp:TextBox>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
     <br />
     <br />
-    <asp:Button ID="Button1" runat="server" Height="39px" onclick="Button1_Click" 
+       <asp:Button ID="Button1" runat="server" Height="39px" onclick="Button1_Click" 
         style="margin-top: 0px" Text="Submit suggestion" Width="262px" />
     <br />
     <br />
-    <table style="width: 5%;" bgcolor="#FFFF99" align="left">
-
+    <table style="border-style: solid">
     <%
         DataTable dt = getData();
-
         for (int i = 0; i < dt.Rows.Count; i++)
         {
-             
-    %>
+         %>
+    <tr><td style="border-color: #C0C0C0; border-style: groove;"><%=dt.Rows[i]["doc_id"]%> said,</td>
+        <td style="border-style: inset; font-size: medium; color: #000000; background-color: #FFFFCC;"><%=dt.Rows[i]["comment"]%></td></tr>
+    <%} %>
 
-       <br /><br />
-
-        <tr>
-            <%=dt.Rows[i]["doc_id"]%>
-        </tr>    
-         <br /><br />
-
-        <tr>
-              <%= dt.Rows[i]["comment"]%>
-       </tr>
-            <br /><br />
-       <tr>     
-              <%=dt.Rows[i]["likes"]%>
-      </tr>
-      <br /><br />
-------------------------------------------------------- 
-        <%} %>
-      </table>
-    <br/>
-
-
-
-
-
-    <br />
-</asp:Content>
+    </table>
+    </asp:Content>
