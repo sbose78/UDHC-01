@@ -78,7 +78,9 @@ namespace Healthcare
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            String nameauto1 = nameauto.Text;
+            
+
+            String nameauto1 = Session["username"].ToString();
             String age1 = age.Text;
             String gender1 = gender.Text;
             String marital1 = marital.Text;
@@ -100,7 +102,7 @@ namespace Healthcare
 
             PatientNaming pn=new PatientNaming();
 
-            
+          /*  
             nameauto1 = pn.getUniqueName();
             
             //find out the first letter
@@ -115,7 +117,7 @@ namespace Healthcare
             }
 
             nameauto1=nameauto1.Substring(j);
-            
+            */
             byte[] imgByte;
 
             if (isImgPresent)

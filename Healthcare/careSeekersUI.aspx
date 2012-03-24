@@ -84,7 +84,7 @@
             <br />
             </font>
             <asp:TextBox ID="duration" runat="server" Height="35px" 
-                style="text-align: left" Width="232px"></asp:TextBox>
+                style="text-align: left" Width="232px" TextMode="MultiLine"></asp:TextBox>
             <span class="style2">&nbsp;&nbsp;&nbsp;
             <br />
             <br />
@@ -92,7 +92,8 @@
             <br />
             <br />
             &nbsp;
-            <asp:TextBox ID="description" runat="server" Height="109px" Width="205px"></asp:TextBox>
+            <asp:TextBox ID="description" runat="server" Height="125px" Width="678px" 
+                TextMode="MultiLine"></asp:TextBox>
             </span>
             <br />
             <br />
@@ -162,13 +163,14 @@
             <br />
             </font>
             <asp:TextBox ID="chronicIssue" runat="server" Height="47px" 
-                style="text-align: justify" Width="303px"></asp:TextBox>
+                style="text-align: justify" Width="549px" TextMode="MultiLine"></asp:TextBox>
             <br />
         </div>
         <div>
             <font face="trebuchet ms,sans-serif">4. Any allergies you are aware of ?<br />
             <br />
-            <asp:TextBox ID="allergies" runat="server" Height="62px" Width="301px"></asp:TextBox>
+            <asp:TextBox ID="allergies" runat="server" Height="62px" Width="301px" 
+                TextMode="MultiLine"></asp:TextBox>
             <br />
             </font>
         </div>
@@ -178,7 +180,7 @@
             <br />
             </font>
             <asp:TextBox ID="familyMainComplaint" runat="server" Height="76px" 
-                Width="309px"></asp:TextBox>
+                Width="309px" TextMode="MultiLine"></asp:TextBox>
             <br />
             <br />
         </div>
@@ -214,7 +216,7 @@
         Please take care of the plant :-)<br />
         To check back on solutions,
         <asp:HyperLink ID="HyperLink1" runat="server" 
-            NavigateUrl="~/docInterface/showProblem.aspx">CLICK HERE</asp:HyperLink>
+            NavigateUrl="~/docInterface/showProblemsTable.aspx">CLICK HERE</asp:HyperLink>
         &nbsp;.</span></asp:Panel>
     </p>
     <p>
