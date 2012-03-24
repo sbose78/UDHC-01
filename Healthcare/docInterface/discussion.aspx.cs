@@ -25,6 +25,7 @@ namespace Healthcare.docInterface
             User user=new User();
 
             TextBox3PatientName.Visible=false;//= Session["username"].ToString();
+            HyperLink1.NavigateUrl = "problemDetails.aspx?patient_data_id=" + Request.Params["problem_id"];
 
         }
 
