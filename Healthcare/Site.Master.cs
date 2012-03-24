@@ -13,7 +13,19 @@ namespace Healthcare
         {
             if (Session["username"] != null)
             {
-                Label1.Text = Session["username"].ToString();
+                Label1.Text = "You are logged in as " + Session["username"].ToString();
+                Button1.Visible = false;
+                Button2.Visible = true;
+
+                
+            }
+            else
+            {
+                Label1.Text = "NOT LOGGED IN ";
+                Button1.Visible = true;
+                Button2.Visible = false;
+                
+                
             }
            
 
@@ -23,6 +35,19 @@ namespace Healthcare
         {
             
             
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Account/Login.aspx");
+
+           
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session["username"] = null;
+            Response.Redirect("../Account/Login.aspx");
         }
 
     }

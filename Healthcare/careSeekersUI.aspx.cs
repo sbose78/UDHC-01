@@ -17,7 +17,7 @@ namespace Healthcare
         {
             if (Session["username"] == null)
             {
-                Response.Redirect("../Account/Login.aspx");
+                Response.Redirect("Account/Login.aspx");
             }
 
             nameauto.Text = Session["username"].ToString();

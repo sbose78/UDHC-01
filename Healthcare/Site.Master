@@ -18,24 +18,26 @@
                 </h1>
             </div>
             <div class="loginDisplay">
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                <asp:LoginStatus ID="LoginStatus1" runat="server" ClientIDMode="AutoID" 
-                    LogoutAction="RedirectToLoginPage" LogoutPageUrl="~/Account/Login.aspx" 
-                    onloggingout="LoginStatus1_LoggingOut" />
-                <asp:LoginName ID="LoginName1" runat="server" />
+                &nbsp;<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="LOGIN" />
+                <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="LOGOUT" />
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
                         <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Care-seekers portal" 
                             Value="Care-seekers portal"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/docInterface/showProblemsTable.aspx" 
                             Text="Table of Health Records" Value="Table of Health Records">
                         </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/docInterface/showProblem.aspx" 
-                            Text="Image Narratives" Value="Image Narratives"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/user/newUser.aspx" 
+                            Text="CARE-SEEKER REGISTRATION" Value="CARE-SEEKER REGISTRATION"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/docInterface/createNewDoc.aspx" 
+                            Text="CARE-GIVER REGISTRATION" Value="CARE-GIVER REGISTRATION">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Account/Login.aspx" Text="LOGIN" Value="LOGIN">
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
