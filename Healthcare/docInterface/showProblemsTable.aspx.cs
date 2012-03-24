@@ -24,7 +24,7 @@ namespace Healthcare.docInterface
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = MySQLDatabase.getConnectionString();
                 DataTable dt = new DataTable();
-                MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT patient_data_id,nameauto,mainHealthIssue FROM patient_data", con);
+                MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT patient_data_id,nameauto,mainHealthIssue FROM patient_data ORDER BY patient_data_id DESC", con);
                 adpt.Fill(dt);
                 con.Close();
                 return dt;    

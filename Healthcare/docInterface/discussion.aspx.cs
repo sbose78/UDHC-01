@@ -24,7 +24,7 @@ namespace Healthcare.docInterface
             TextBox2ProblemId.Text = Request.Params["problem_id"];         
             User user=new User();
 
-            TextBox3PatientName.Text = Session["username"].ToString();
+            TextBox3PatientName.Visible=false;//= Session["username"].ToString();
 
         }
 
@@ -46,7 +46,7 @@ namespace Healthcare.docInterface
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = MySQLDatabase.getConnectionString();
             DataTable dt = new DataTable();
-            MySqlDataAdapter adpt = new MySqlDataAdapter("select * from suggestion where problem_id = " + Request.Params["problem_id"], con);
+            MySqlDataAdapter adpt = new MySqlDataAdapter("select * from suggestion where problem_id = " + Request.Params["problem_id"]+" ORDER BY suggestion_id ASC", con);
             adpt.Fill(dt);
             con.Close();
             return dt;
