@@ -67,10 +67,13 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="docInterface\test.htm" />
     <Content Include="docInterface\imgdata.aspx" />
     <Content Include="docInterface\showProblem.aspx" />
     <Content Include="docInterface\showProblemsTable.aspx" />
     <Content Include="docInterface\problemDetails.aspx" />
+    <Content Include="docInterface\discussion.aspx" />
+    <Content Include="docInterface\createNewDoc.aspx" />
     <Content Include="patient_naming\scientificNamesForm.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -79,6 +82,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="patient_naming\sci-names.txt" />
+    <Content Include="user\newUser.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -138,6 +142,21 @@
     <Compile Include="docInterface\problemDetails.aspx.designer.cs">
       <DependentUpon>problemDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="docInterface\discussion.aspx.cs">
+      <DependentUpon>discussion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docInterface\discussion.aspx.designer.cs">
+      <DependentUpon>discussion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docInterface\createNewDoc.aspx.cs">
+      <DependentUpon>createNewDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docInterface\createNewDoc.aspx.designer.cs">
+      <DependentUpon>createNewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="patient\Suggestion.cs" />
     <Compile Include="patient_naming\PatientNaming.cs" />
     <Compile Include="dbcon\MySQLDatabase.cs" />
     <Compile Include="Default.aspx.cs">
@@ -186,6 +205,14 @@
     </Compile>
     <Compile Include="careSeekersUI.aspx.designer.cs">
       <DependentUpon>careSeekersUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\User.cs" />
+    <Compile Include="user\newUser.aspx.cs">
+      <DependentUpon>newUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\newUser.aspx.designer.cs">
+      <DependentUpon>newUser.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

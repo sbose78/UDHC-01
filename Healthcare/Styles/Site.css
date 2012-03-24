@@ -9,6 +9,7 @@ body
     margin: 0px;
     padding: 0px;
     color: #696969;
+    text-align: center;
 }
 
 a:link, a:visited
@@ -31,7 +32,7 @@ p
 {
     margin-bottom: 10px;
     line-height: 1.6em;
-    height: 153px;
+    height: 53px;
     text-align: center;
 }
 
@@ -202,6 +203,7 @@ fieldset
 fieldset p 
 {
     margin: 2px 12px 10px 10px;
+    width: 308px;
 }
 
 fieldset.login label, fieldset.register label, fieldset.changePassword label
@@ -235,7 +237,8 @@ input.passwordEntry
 
 div.accountInfo
 {
-    width: 42%;
+    width: 104%;
+    height: 357px;
 }
 
 /* MISC  

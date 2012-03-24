@@ -38,7 +38,20 @@ namespace Healthcare
                     con.Close();
 
                 }
-                return unique_name;
+                String nameauto1 = unique_name;
+                int j;
+                for (j = 0; j < nameauto1.Length; j++)
+                {
+                    if (nameauto1[j] != '#' && nameauto1[j] != ' ')
+                    {
+                        break;
+                    }
+
+                }
+
+                nameauto1 = nameauto1.Substring(j);
+
+                return nameauto1;
         }
 
         public String insertNames(String[] names)

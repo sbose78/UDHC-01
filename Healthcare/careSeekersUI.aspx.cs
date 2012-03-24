@@ -15,6 +15,13 @@ namespace Healthcare
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["username"] == null)
+            {
+                Response.Redirect("../Account/Login.aspx");
+            }
+
+            nameauto.Text = Session["username"].ToString();
+
             ShowNamePanel.Visible = false;
             FormQuestionsPanel.Visible = true;
             ImageUploadPanel.Visible = true;

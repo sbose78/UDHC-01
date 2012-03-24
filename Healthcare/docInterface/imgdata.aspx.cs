@@ -14,13 +14,14 @@ namespace Healthcare.docInterface
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
 
-            String nameauto=Request.Params["nameauto"];
+
+            String patient_data_id = Request.Params["patient_data_id"];
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = MySQLDatabase.getConnectionString();
             DataTable dt = new DataTable();
-           MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT imgByte FROM patient_data WHERE  nameauto = '"+nameauto+"'", con);
+            MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT imgByte FROM patient_data WHERE  patient_data_id = " + patient_data_id , con);
+
        //     MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT pic FROM student WHERE  (name = '"+nameauto+"') ", con);
 
             adpt.Fill(dt);
@@ -34,7 +35,7 @@ namespace Healthcare.docInterface
             else
             {
                 Response.Write("nothing");
-                System.Web.HttpContext.Current.Response.Write("<SCRIPT>alert('Hello this is an Alert"+nameauto+"')</SCRIPT>");
+                System.Web.HttpContext.Current.Response.Write("<SCRIPT>alert('Hello this is an Alert" + patient_data_id + "')</SCRIPT>");
             }
         }
 

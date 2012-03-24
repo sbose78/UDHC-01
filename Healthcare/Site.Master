@@ -18,15 +18,11 @@
                 </h1>
             </div>
             <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" ClientIDMode="AutoID" 
+                    LogoutAction="RedirectToLoginPage" LogoutPageUrl="~/Account/Login.aspx" 
+                    onloggingout="LoginStatus1_LoggingOut" />
+                <asp:LoginName ID="LoginName1" runat="server" />
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">

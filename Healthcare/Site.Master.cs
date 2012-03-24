@@ -11,7 +11,21 @@ namespace Healthcare
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["username"] != null)
+            {
+                Label1.Text = Session["username"].ToString();
+            }
+           
 
         }
+
+        protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)
+        {
+            
+            
+        }
+
     }
+       
 }
+ 

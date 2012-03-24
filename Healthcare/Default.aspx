@@ -2,16 +2,27 @@
     CodeBehind="Default.aspx.cs" Inherits="Healthcare._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+    <style type="text/css">
+        .style1
+        {
+            font-size: large;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Welcome to ASP.NET!
-    </h2>
-    <p>
-        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
+        &nbsp;</h2>
+    <p class="style1">
+        CARE-SEEKERS,<asp:HyperLink ID="HyperLink2" runat="server" 
+            NavigateUrl="~/user/newUser.aspx">CREATE ANONYMOUS ACCOUNT AND SUBMIT HEALTH RECORD</asp:HyperLink>
+    </p>
+    <p class="style1">
+        CARE-GIVERS, 
+        <asp:HyperLink ID="HyperLink1" runat="server" 
+            NavigateUrl="~/docInterface/createNewDoc.aspx">REGISTER HERE</asp:HyperLink>
     </p>
     <p>
-        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
-</asp:Content>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    </asp:Content>

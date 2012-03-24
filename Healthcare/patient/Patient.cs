@@ -156,7 +156,7 @@ namespace Healthcare
 
                 MySqlCommand comm = new MySqlCommand(commandText, conn);
                 comm.Parameters.Add("?nameauto", MySqlDbType.LongText).Value = nameauto;
-                comm.Parameters.Add("?age", MySqlDbType.Int32).Value = Convert.ToInt32( age);
+                comm.Parameters.Add("?age", MySqlDbType.LongText).Value = age;
                 comm.Parameters.Add("?gender", MySqlDbType.LongText).Value = gender;
                 comm.Parameters.Add("?marital", MySqlDbType.LongText).Value = marital;
                 comm.Parameters.Add("?mainHealthIssue", MySqlDbType.LongText).Value = mainHealthIssue;

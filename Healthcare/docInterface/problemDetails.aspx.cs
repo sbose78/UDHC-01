@@ -19,14 +19,14 @@ namespace Healthcare.docInterface
 
         public DataTable getAllData()
         {
-            String name=Request.Params["nameauto"];
+            String patient_data_id = Request.Params["patient_data_id"];
 
 
 
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = MySQLDatabase.getConnectionString();
             DataTable dt = new DataTable();
-            MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT * FROM patient_data where nameauto = '"+name+"'", con);
+            MySqlDataAdapter adpt = new MySqlDataAdapter("SELECT * FROM patient_data where patient_data_id = " + patient_data_id, con);
             adpt.Fill(dt);
             con.Close();
             return dt;

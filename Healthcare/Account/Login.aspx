@@ -9,9 +9,14 @@
     </h2>
     <p>
         Please enter your username and password.
-        <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Register</asp:HyperLink> if you don't have an account.
+        <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="False" 
+            NavigateUrl="~/Default.aspx">Register</asp:HyperLink> if you don't have an account.
     </p>
-    <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false">
+    <asp:Login ID="LoginUser" runat="server" EnableViewState="False" 
+        BackColor="#FFFBD6" BorderColor="#FFDFAD" BorderPadding="4" BorderStyle="Solid" 
+        BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" 
+        TextLayout="TextOnTop">
+        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
         <LayoutTemplate>
             <span class="failureNotification">
                 <asp:Literal ID="FailureText" runat="server"></asp:Literal>
@@ -41,9 +46,15 @@
                     </p>
                 </fieldset>
                 <p class="submitButton">
-                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="LoginUserValidationGroup"/>
+                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" 
+                        ValidationGroup="LoginUserValidationGroup" onclick="login"/>
                 </p>
             </div>
         </LayoutTemplate>
+        <LoginButtonStyle BackColor="White" BorderColor="#CC9966" BorderStyle="Solid" 
+            BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" />
+        <TextBoxStyle Font-Size="0.8em" />
+        <TitleTextStyle BackColor="#990000" Font-Bold="True" Font-Size="0.9em" 
+            ForeColor="White" />
     </asp:Login>
 </asp:Content>
