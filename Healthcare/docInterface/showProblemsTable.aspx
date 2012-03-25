@@ -5,18 +5,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-   <script type="text/JavaScript" src="../Scripts/jquery-1.4.1-vsdoc.js"></script>  
-   <script type="text/JavaScript" src="../Scripts/jquery-1.4.1.js"></script>  
-   <script type="text/JavaScript" src="../Scripts/jquery-1.4.1.min.js"></script>  
    
-  <script type="text/JavaScript">
-      $(document).ready(function () {
-          $("#generate").click(function () {
-              $("#quote p").load("problemDetails.aspx?nameauto=Shoubhik");
-          });
-      });  
-  </script> 
-  
     <style type="text/css">     
         
         .style1
@@ -31,7 +20,7 @@
         }
         .style3
         {
-            font-size: x-large;
+            font-size: large;
         }
         #quote
         {
@@ -45,17 +34,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <br />
-    <br />
-    &nbsp;<div id="quote">  <p></p>
-    </div>
+    <div>
+        <p align="center"" class="style3">
 
-
-    
-<div>
-    <p align="center"">
-
-        &nbsp;<span class="style3">Table of health records</span></p>
+            <strong>&nbsp;Table of health records</strong></p>
 
     </div>
 

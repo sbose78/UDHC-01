@@ -27,6 +27,8 @@ namespace Healthcare.docInterface
             adpt.Fill(dt);
             if (dt.Rows.Count != 0)
             {
+                if (dt.Rows[dt.Rows.Count - 1]["imgByte"] == null)
+                    return;
                 byte[] data = (byte[])dt.Rows[dt.Rows.Count -1]["imgByte"];
                 Response.ContentType = "image/jpeg";
                 Response.BinaryWrite(data);

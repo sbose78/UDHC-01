@@ -74,6 +74,9 @@
     <Content Include="docInterface\problemDetails.aspx" />
     <Content Include="docInterface\discussion.aspx" />
     <Content Include="docInterface\createNewDoc.aspx" />
+    <Content Include="downloadables\User-reviews.aspx" />
+    <Content Include="downloadables\FAQ.aspx" />
+    <Content Include="downloadables\About.aspx" />
     <Content Include="patient_naming\scientificNamesForm.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -91,6 +94,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="careSeekersUI.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -156,6 +160,27 @@
     <Compile Include="docInterface\createNewDoc.aspx.designer.cs">
       <DependentUpon>createNewDoc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="downloadables\User-reviews.aspx.cs">
+      <DependentUpon>User-reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadables\User-reviews.aspx.designer.cs">
+      <DependentUpon>User-reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloadables\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadables\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloadables\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadables\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="patient\Suggestion.cs" />
     <Compile Include="patient_naming\PatientNaming.cs" />
     <Compile Include="dbcon\MySQLDatabase.cs" />
@@ -213,6 +238,13 @@
     </Compile>
     <Compile Include="user\newUser.aspx.designer.cs">
       <DependentUpon>newUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

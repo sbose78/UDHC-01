@@ -22,9 +22,7 @@ namespace Healthcare
 
             nameauto.Text = Session["username"].ToString();
 
-            ShowNamePanel.Visible = false;
-            FormQuestionsPanel.Visible = true;
-            ImageUploadPanel.Visible = true;
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -53,11 +51,8 @@ namespace Healthcare
                 comm.ExecuteNonQuery();
                 conn.Close();
                 
-                ShowNamePanel.Visible = true;
-                FormQuestionsPanel.Visible = false;
-                ImageUploadPanel.Visible = false;
-
-                Label1.Text = "Nayan!!!";
+               
+                
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -154,12 +149,11 @@ namespace Healthcare
 
            p.insertPatientData().ToString();
 
-            Label1.Text = nameauto1;
+           Response.Redirect("docInterface/showProblemsTable.aspx");
+
             
 
-            ShowNamePanel.Visible = true;
-            FormQuestionsPanel.Visible = false;
-            ImageUploadPanel.Visible = false;
+            
 
 
             //insert into database

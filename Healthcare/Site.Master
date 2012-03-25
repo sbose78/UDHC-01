@@ -10,42 +10,45 @@
     <style type="text/css">
         .style1
         {
-            font-size: larger;
-            font-weight: normal;
-            font-style: normal;
+            font-size: xx-large;
         }
     </style>
-</head>
+    </head>
 <body>
     <form runat="server">
     <div class="page">
         <div class="header">
-            <div class="title">
-                <h1 class="style1">
-                   USER-DRIVEN HEALTHCARE
-                    : Global Learning Toward Local Caring</h1>
-            </div>
             <div class="loginDisplay">
-                &nbsp;<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Panel ID="Panel1" runat="server" Direction="LeftToRight" Height="44px">
+                    <span class="style1">USER DRIVEN HEALTH CARE: Global Learning Towards Local Care 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                </asp:Panel>
+                <br />
+                <asp:Label align="left" ID="Label1" runat="server" Text="Label"></asp:Label>
                 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="LOGIN" />
                 <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="LOGOUT" />
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Care-seekers portal" 
-                            Value="Care-seekers portal"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/downloadables/About.aspx" 
+                            Text="About" Value="About"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/downloadables/FAQ.aspx" 
+                            Text="FAQs" Value="FAQs">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/downloadables/User-reviews.aspx" 
+                            Text="User Reviews" Value="User Reviews">
+                        </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/docInterface/showProblemsTable.aspx" 
-                            Text="Table of Health Records" Value="Table of Health Records">
+                            Text="Browse Health Records" Value="Table of Health Records">
                         </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/user/newUser.aspx" 
-                            Text="CARE-SEEKER REGISTRATION" Value="CARE-SEEKER REGISTRATION"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Enter new health record" 
+                            Value="Care-seekers portal"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/docInterface/createNewDoc.aspx" 
-                            Text="CARE-GIVER REGISTRATION" Value="CARE-GIVER REGISTRATION">
-                        </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/Account/Login.aspx" Text="LOGIN" Value="LOGIN">
-                        </asp:MenuItem>
+                            Text="Care-givers SIGN-UP" Value="Care-givers SIGN-UP"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/user/newUser.aspx" Text="CARE-seekers SIGN-UP" 
+                            Value="CARE-seekers SIGN-UP"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
