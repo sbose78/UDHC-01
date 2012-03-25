@@ -11,6 +11,7 @@ namespace Healthcare
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (Session["username"] != null)
             {
                 Label1.Text = "You are logged in as " + Session["username"].ToString();
@@ -27,6 +28,7 @@ namespace Healthcare
                 
                 
             }
+            Label1.Text += Request.ApplicationPath.ToString();
            
 
         }
@@ -39,7 +41,8 @@ namespace Healthcare
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../Account/Login.aspx");
+         //   Label1.Text+=Request.ApplicationPath.ToString() + "/Accuount/Login.aspx";
+            Response.Redirect("/Account/Login.aspx");
 
            
         }
@@ -47,7 +50,7 @@ namespace Healthcare
         protected void Button2_Click(object sender, EventArgs e)
         {
             Session["username"] = null;
-            Response.Redirect("../Account/Login.aspx");
+            Response.Redirect("/Account/Login.aspx");
         }
 
     }
