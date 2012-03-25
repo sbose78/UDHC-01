@@ -61,7 +61,7 @@ namespace Healthcare
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
-                TextBox1.Text = ex.ToString();
+             //   TextBox1.Text = ex.ToString();
             }
             finally
             {
@@ -152,7 +152,7 @@ namespace Healthcare
                                     imgByte,
                                     isImgPresent);
 
-            TextBox1.Text= p.insertPatientData().ToString();
+           p.insertPatientData().ToString();
 
             Label1.Text = nameauto1;
             

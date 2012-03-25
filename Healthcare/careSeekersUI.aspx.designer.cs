@@ -148,6 +148,24 @@ namespace Healthcare {
         protected global::System.Web.UI.WebControls.TextBox treatment;
         
         /// <summary>
+        /// doctorSay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox doctorSay;
+        
+        /// <summary>
+        /// drugsOn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox drugsOn;
+        
+        /// <summary>
         /// problemsInThePast control.
         /// </summary>
         /// <remarks>

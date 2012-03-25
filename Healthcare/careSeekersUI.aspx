@@ -127,10 +127,20 @@
             treatment for it (allopathic or alternative)&nbsp;
             <asp:TextBox ID="treatment" runat="server" Height="21px" Width="213px"></asp:TextBox>
             <br />
+            <br />
+            e. What did the doctor say ?<br />&nbsp;
+            <asp:TextBox ID="doctorSay" runat="server" Height="64px" TextMode="MultiLine" 
+                Width="357px"></asp:TextBox>
+            <br />
+            <br />
+            f. What drugs are you on?<br />
+            <asp:TextBox ID="drugsOn" runat="server" Height="63px" TextMode="MultiLine" 
+                Width="364px"></asp:TextBox>
+            <br />
             </font>
         </div>
         <div>
-            <font face="'trebuchet ms', sans-serif">e. Past history<br /> </font>
+            <font face="'trebuchet ms', sans-serif">g. Past history<br /> </font>
         </div>
         <div>
             <font face="'trebuchet ms', sans-serif">&nbsp;1. Have you experienced similar 
