@@ -47,7 +47,7 @@
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Enter new health record" 
                             Value="Care-seekers portal"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/docInterface/createNewDoc.aspx" 
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" 
                             Text="Register" Value="Care-givers SIGN-UP"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
