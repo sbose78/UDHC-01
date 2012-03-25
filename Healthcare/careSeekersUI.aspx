@@ -220,6 +220,5 @@
         &nbsp;.</span></asp:Panel>
     </p>
     <p>
-        <asp:TextBox ID="TextBox1" runat="server" Height="41px" Width="665px"></asp:TextBox>
-    </p>
+        &nbsp;</p>
 </asp:Content>

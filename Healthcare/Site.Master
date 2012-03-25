@@ -7,15 +7,23 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: larger;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
     <div class="page">
         <div class="header">
             <div class="title">
-                <h1>
+                <h1 class="style1">
                    USER-DRIVEN HEALTHCARE
-                </h1>
+                    : Global Learning Toward Local Caring</h1>
             </div>
             <div class="loginDisplay">
                 &nbsp;<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
