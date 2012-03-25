@@ -30,7 +30,9 @@
                 <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="LOGOUT" />
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                    StaticSubMenuIndent="16px">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/downloadables/About.aspx" 
                             Text="About" Value="About"></asp:MenuItem>
@@ -46,9 +48,7 @@
                         <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Enter new health record" 
                             Value="Care-seekers portal"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/docInterface/createNewDoc.aspx" 
-                            Text="Care-givers SIGN-UP" Value="Care-givers SIGN-UP"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/user/newUser.aspx" Text="CARE-seekers SIGN-UP" 
-                            Value="CARE-seekers SIGN-UP"></asp:MenuItem>
+                            Text="Register" Value="Care-givers SIGN-UP"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
