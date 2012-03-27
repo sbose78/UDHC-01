@@ -49,6 +49,8 @@
                             Value="Care-seekers portal"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" 
                             Text="Register" Value="Care-givers SIGN-UP"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="Feedback" Value="Feedback">
+                        </asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
