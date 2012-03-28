@@ -74,6 +74,8 @@
     <Content Include="docInterface\problemDetails.aspx" />
     <Content Include="docInterface\discussion.aspx" />
     <Content Include="docInterface\createNewDoc.aspx" />
+    <Content Include="docInterface\UDHC SDH patient record picture minus mast head.jpg" />
+    <Content Include="docInterface\Network.aspx" />
     <Content Include="downloadables\User-reviews.aspx" />
     <Content Include="downloadables\FAQ.aspx" />
     <Content Include="downloadables\About.aspx" />
@@ -161,6 +163,13 @@
     </Compile>
     <Compile Include="docInterface\createNewDoc.aspx.designer.cs">
       <DependentUpon>createNewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docInterface\Network.aspx.cs">
+      <DependentUpon>Network.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docInterface\Network.aspx.designer.cs">
+      <DependentUpon>Network.aspx</DependentUpon>
     </Compile>
     <Compile Include="downloadables\User-reviews.aspx.cs">
       <DependentUpon>User-reviews.aspx</DependentUpon>

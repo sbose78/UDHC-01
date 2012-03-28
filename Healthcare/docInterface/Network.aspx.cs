@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Healthcare.docInterface
 {
-	public partial class  : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+    public partial class WebForm7 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
-	}
+        }
+    }
 }
