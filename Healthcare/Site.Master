@@ -42,14 +42,15 @@
                         <asp:MenuItem NavigateUrl="~/downloadables/User-reviews.aspx" 
                             Text="User Reviews" Value="User Reviews">
                         </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/docInterface/showProblemsTable.aspx" 
+                        <asp:MenuItem NavigateUrl="~/docInterface/Network.aspx" 
                             Text="Browse Health Records" Value="Table of Health Records">
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/careSeekersUI.aspx" Text="Enter new health record" 
                             Value="Care-seekers portal"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" 
                             Text="Register" Value="Care-givers SIGN-UP"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="Feedback" Value="Feedback">
+                        <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="Care-seeker/Patient feedback" 
+                            Value="Feedback">
                         </asp:MenuItem>
                     </Items>
                 </asp:Menu>
