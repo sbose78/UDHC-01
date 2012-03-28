@@ -194,7 +194,7 @@
             <br />
             <br />
         </div>
-        <div style="height: 95px; margin-bottom: 0px">
+        <div style="height: 334px; margin-bottom: 0px">
             <font face="trebuchet ms,sans-serif">6. Does anyone in your family have any 
             chronic health issue (HTN/CVS/CNS/Mental health issues/Skin problems etc)<br />
             <br />
@@ -202,8 +202,19 @@
             <asp:TextBox ID="familyChronic" runat="server" Height="89px" Width="362px"></asp:TextBox>
             <br />
             <br />
+            <asp:CheckBox ID="CheckBox1" runat="server" 
+                Text="I have read the disclaimer I'm okay with that" />
+            &nbsp;(<asp:HyperLink ID="HyperLink1" runat="server" 
+                NavigateUrl="~/downloadables/Disclaimer.aspx">Read disclaimer</asp:HyperLink>
+            )<br />
+            <br />
+            <asp:Label ID="Label2DisclaimerError" runat="server"></asp:Label>
+            <br />
             <span class="style2">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <br />
+
             <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                 style="text-align: center; height: 26px" Text="Submit health data" />
             </span>

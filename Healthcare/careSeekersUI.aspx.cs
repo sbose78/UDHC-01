@@ -73,7 +73,11 @@ namespace Healthcare
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            
+            if (CheckBox1.Checked == false)
+            {
+                Label2DisclaimerError.Text = " Aren't you okay with the disclaimer?";
+                return;
+            }
 
             String nameauto1 = Session["username"].ToString();
             String age1 = age.Text;
