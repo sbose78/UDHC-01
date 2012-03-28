@@ -26,7 +26,10 @@
             NavigateUrl="~/docInterface/createNewDoc.aspx">REGISTER HERE</asp:HyperLink>
     </p>
     <p>
-        &nbsp;</p>
+        Download the
+        <asp:HyperLink ID="HyperLink3" runat="server" 
+            NavigateUrl="https://docs.google.com/open?id=1lE-DaWEML5WliIg_Eo_T2VawP0ztZ5uCrXGvf8hAjb5o75QNg0tkmikWLLsH">UHDC Patient consent form </asp:HyperLink>
+    </p>
     <p>
         &nbsp;</p>
     </asp:Content>
